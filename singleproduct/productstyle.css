@@ -1,0 +1,58 @@
+body {
+  background: #d9d9d9;
+  color: black;
+  width: 100%;
+  height:100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.product-container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0;
+  padding: 20px;
+}
+
+.image-column img {
+    width: 120%;
+    position: absolute;
+    top: 0;
+    left: 5px;
+/*    opacity: 0;*/
+    transition: all 0.3s ease;
+}
+
+.image-column img.active {
+    opacity: 1;
+}
+
+.image-column {
+    position: relative;
+    width: 60%;
+}
+
+.info-column {
+    position: absolute;
+    width: 40%;
+    left: 775px;
+}
+
+.tshirt-description {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+}
+
+.tshirt-description span {
+  color: #4d79ff;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.tshirt-description h1 {
+  font-weight: 300;
+  font-size: 52px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
