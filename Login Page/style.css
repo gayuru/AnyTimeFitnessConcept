@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+body {
+    padding: 0;
+    margin: 0;
+    width: 100v;
+    height: 100vh;
+    position: relative;
+    
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
+
+.username{
+    position: relative;
+    z-index: 1;
+    font-family: "Source Sans Pro";
+    font-weight: bolder;
+    color: #cf4af8;
+    font-size: 15px;
+    width: 360px;
+    margin: 0 auto 100px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border:none;
+   
+}
+.password{
+    position: relative;
+    z-index: 1;
+    font-family: "Source Sans Pro";
+    font-weight: bolder;
+    color: #cf4af8;
+    font-size: 15px;
+    background: #FFFFFF;
+    width: 360px;
+    margin: 0 auto 100px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    
+    margin-bottom: 20px;
+    border:none;
+}
+
+.submit{
+font-family: "Montserrat", sans-serif;
+font-weight: bold;
+  outline: 0;
+  background: linear-gradient(to right, #bc4e9c, #f80759);
+  width: 50%;
+  border: 0;
+  padding: 16px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-left: 14px;
+}
+
+
+.logo-container {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 90%;
+    height: 80%;
+    background-image: url("victor-freitas-546919-unsplash.jpg") ;
+    background-size: 100% ;
+    background-position:inherit;
+    z-index: 10;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vport{
+    
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+   
+    
+}
+.copy-text{
+
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.fa-heart:before {
+    content: "\f004";
+}
+
+.vport:first-child{
+    background-color: #cf4af8;
+    width: 30%;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between; 
+  
+}
+input::placeholder {
+    color:#cf4af8;
+  }
+.vport form input {
+    display: block;
+}
+#logo{
+    text-align: center;
+
+}
+#logo img {
+  width:80%;
+  height: 80%;
+  margin-top : 80px;
+  
+}
+
+
+.background {
+  height: 100%;
+  background: linear-gradient(to right, #FC466B, #3F5EFB);
+}
+
+
+
