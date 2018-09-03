@@ -144,7 +144,7 @@ margin-top: 8em;
 {
 	overflow: hidden;
 	padding: 6em 0em 17em 0em;
-	background: #1A1A1D;
+	
 	text-align: center;
 }
 
@@ -177,8 +177,42 @@ margin-top: 8em;
 	text-align: left;
 	font-size: 16px;
 	color: #808080;
+	line-height: 1.8;
 }
 
+/* Banner */
+
+#banner{
+	overflow: hidden;
+	padding: 6em 0em 14em 0em;
+	text-align: center;
+	background-image: url("gymGirls.jpg") ;
+    background-size: 100% ;
+    background-position:inherit;
+}
+
+#headingBanner{
+	font-family: Source Sans Pro;
+	color: #FFF;
+	font-size: 40px;
+}
+
+.btnMerch {
+	display: inline-block;
+	padding: 15px 50px;
+	color: #000000;
+	border: 2px solid #000000;
+	font-size: 14px;
+	line-height: 120%;
+
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 30px;
+	-webkit-transition: background-color 300ms ease;
+	-moz-transition: background-color 300ms ease;
+	
+	cursor: pointer;
+}
 /* secondWrapper */
 
 #wrapperTwo{
@@ -188,6 +222,14 @@ margin-top: 8em;
 #containerTwo{
 	background: #9A1750;
 }
+
+#gymImg img{
+	height: 50%;
+	float: right;
+	position: absolute;
+	top: 88%;
+}
+
 
 
 /* Copyright */
