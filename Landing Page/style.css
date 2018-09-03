@@ -27,20 +27,7 @@ body
     
 }
 
-/* 
-	card1 == card2 => Object.equals()
-	PlayingCard.equals()
-	this.assertEquals(card1, card2) => this.assertEquals(1,2) => 1 == 2
-	Object.equals(Object o) {
-		PlayingCard card = (PlayingCard) o;
-		return PlayingCard.equals(card);
-	}
-*/
-
-
-/*********************************************************************************/
-/* Header                                                                        */
-/*********************************************************************************/
+/* Header */
 	
 #header
 {
@@ -48,9 +35,7 @@ body
 	height: 100px;
 }
 
-/*********************************************************************************/
-/* Logo                                                                          */
-/*********************************************************************************/
+/* Logo */
 
 #logo img
 {
@@ -61,11 +46,7 @@ body
     left:9%;
 }
 
-
-
-/*********************************************************************************/
-/* Menu                                                                          */
-/*********************************************************************************/
+/* Menu */
 
 #menu
 {
@@ -114,13 +95,11 @@ body
 	color: #FFF;
 }
 
-/*********************************************************************************/
-/* Banner                                                                        */
-/*********************************************************************************/
+/* Banner */
+
 #header-featured
 {
-		padding: 15%;
-		background-image: url(images/pic.jpg);
+		/* padding: 15%;  */
 		background-position: center;
 		background-size: cover;
 	}
@@ -128,39 +107,42 @@ body
 .container h1{
     color: white;
     font-family: Quicksand;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 #lefttext{
     float: left;
-    text-align: center;
+	text-align: center;
+	
 }
 
 #righttext{
     float: right;
     color: #cf4af8;
-    text-align: center;
+	text-align: center;
+	
 
 }
-
-#banner-wrapper{
-    margin-bottom: 20%;
+#transformation {
+    display: block;
+    margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	
 }
 
-/*********************************************************************************/
-/* Page                                                                          */
-/*********************************************************************************/
+/* Page */
 
 #wrapper
 {
-	background: #38495c;
+	background: #1A1A1D;
 }
 
 #page
 {
 	overflow: hidden;
 	padding: 6em 0em 40em 0em;
-	background: #38495c;
+	background: #1A1A1D;
 	text-align: center;
 }
 
@@ -169,9 +151,7 @@ body
 	margin-top: 2em;
 }
 
-/*********************************************************************************/
-/* Content                                                                       */
-/*********************************************************************************/
+/* Content */
 
 	#content
 	{
@@ -180,9 +160,35 @@ body
 	}
 
 
-/*********************************************************************************/
-/* Copyright                                                                     */
-/*********************************************************************************/
+
+/* firstWrapper */
+
+#headingWrapper{
+	font-size: 40px;
+	margin-top: 10%;
+	text-align: left;
+	font-family: Source Sans Pro;
+}
+
+
+#paraWrapper{
+	text-align: left;
+	font-size: 16px;
+	color: #808080;
+}
+
+/* secondWrapper */
+
+#wrapperTwo{
+	background: #9A1750;
+}
+
+#containerTwo{
+	background: #9A1750;
+}
+
+
+/* Copyright */
 
 #copyright
 {
