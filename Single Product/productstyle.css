@@ -19,7 +19,7 @@ body {
     position: absolute;
     top: 0;
     left: 5px;
-/*    opacity: 0;*/
+    opacity: 0;
     transition: all 0.3s ease;
 }
 
@@ -39,7 +39,7 @@ body {
 }
 
 .tshirt-description {
-    border-bottom: 1px solid #E1E8EE;
+    border-bottom: 1px solid #ac39ac;
     margin-bottom: 20px;
 }
 
@@ -51,8 +51,115 @@ body {
 }
 
 .tshirt-description h1 {
-  font-weight: 300;
-  font-size: 52px;
-  color: #43484D;
-  letter-spacing: -2px;
+  color: #262626;
+  font-size: 50px;
+  letter-spacing: -3px;
+  font-weight: 700;
 }
+
+.tshirt-description p {
+    color: black;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.tshirt-description ul {
+    color: black;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.tshirt-color {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ac39ac;
+    padding: 2px;
+}
+
+.tshirt-color span {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.choose-color div {
+  display: inline-block;
+}
+
+.choose-color input {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.choose-color input {
+/*
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+*/
+}
+
+.choose-color input #grey {
+  background-color: gray;
+}
+
+.color-choose input #black {
+  background-color: black;
+}
+
+.color-choose input checked + label span {
+  background-image: url(images/check-icn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tshirt-price {
+  display: flex;
+  align-items: center;
+}
+
+.tshirt-price span {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ac39ac;
+  margin-right: 20px;
+}
+
+.buy-button {
+  display: inline-block;
+  background-color: black;
+  border-radius: 50px;
+  font-size: 18px;
+  color: white;
+  padding: 16px 40px;
+  text-decoration: underline;
+  transition: all .5s;
+}
+.buy-button:hover {
+  background-color: aqua;
+}
+
+.size-options{
+  position: relative;
+  display: inline-block;
+}
+
+.size-options span {
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+  margin-right: 20px; 
+}
+
+.tshirt-size {
+    display: inline-block;
+    min-width: 160px;
+    padding: 8px 6px;
+    z-index: 1;
+    
+}
+

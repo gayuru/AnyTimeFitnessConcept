@@ -9,7 +9,12 @@
  
          <!--Column for picture-->
          <div class="image-column">
-           <img data-image="grey" src="tshirt.jpg" alt="">
+           <img data-image="grey" class="active" src="tshirt.jpg" name="shirt" id="shirt" alt="">
+           <img data-image="black" src="tshirtblack.jpg" name="shirt" id="shirt" alt="">
+<!--
+           <img src="tshirt.jpg" name="grey" id="shirt">
+           <img src="tshirtblack.jpg" name="black" id="shirt">
+-->
          </div>
 
          <!--Column for product info-->
@@ -18,8 +23,8 @@
             <!--Tshirt description-->
             <div class="tshirt-description">
                 <span>Clothing</span>
-                <h1>Anytime Fitness</h1>
-                <p>Show off your workout dedication with the new official Anytime Fitness T-Shirt! Available now in Grey and White.</p>
+                <h1>Anytime Fitness T-Shirt</h1>
+                <p>Show off your workout dedication with the new official Anytime Fitness T-Shirt! Designed for maximum comfort and breathability, this T-Shirt is sure to be your go-to gymwear! Available now in Grey and Black.</p>
                 <ul>
                   <li>Regular Fit</li>
                   <li>100% Cotton</li>
@@ -33,22 +38,26 @@
                 <!--tshirt colour-->
                 <div class="tshirt-color">
                     <span>Color</span>
-
-                    <div class="color choice">
+                    
+                    <div class="choose-color">
+<!--
                         <div>
                             <input data-image="grey" type="radio" id="grey" name="color" value="grey" checked>
                             <label for="grey"><span>Grey</span></label>
                         </div>
                         <div>
-                            <input data-image="white" type="radio" id="white" name="color" value="white">
-                            <label for="white"><span>White</span></label>
+                            <input data-image="black" type="radio" id="black" name="color" value="black">
+                            <label for="black"><span>Black</span></label>
                         </div>
+-->
+                        <input type="radio" name="option" value="Grey" id="Grey" checked>Grey
+                        <input type="radio" name="option" value="Black" id="Black" >Black
                     </div>
                       
                 </div>
 <br>
                 <!--tshirt size-->
-                <div class="size options">
+                <div class="size-options">
                     <span>Select Your Size</span>
 
                     <div class="tshirt-size">
@@ -62,8 +71,15 @@
                 </div>
             </div>
              <br>
+            <form method="post" action="">
+             <div>
+              <label for="name">Quantity</label>
+              <input type="number" name="quantity" id="quantity" value="1">
+             </div>
+            </form>
+             <br>
             <div class="tshirt-price">
-                <span>$40</span>
+                <span>$39.99</span>
                 <a href="#" class="buy-button">Buy Now</a>
             </div>
         </div>
@@ -71,3 +87,24 @@
 
    </body>
 </html>
+
+
+<script type='text/javascript'>
+    $(document).ready(function(){
+        $("input:radio[name=option]").click(function() {
+            var value = $(this).val();
+            var imagename;
+            if(value == 'Grey'){
+                imagename = "tshirt.jpg";
+            }
+            else{
+                if(value == 'Black'){
+                    imagename = "tshirtblack.jpg"
+                }
+            }
+            $('#shirt').attr('src', imagename);
+        });
+    });
+                                        
+        
+</script>
