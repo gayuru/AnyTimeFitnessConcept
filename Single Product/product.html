@@ -3,14 +3,26 @@
    <head>
      <title>Anytime Fitness T-Shirt</title>
      <link rel="stylesheet" href="productstyle.css">
+
+     <script>
+            function preLoad() {
+              a1 = new Image; a1.src = 'tshirt.png';  
+              a2 = new Image; a2.src = 'tshirtblack.png';
+              
+            }
+            function im(image) {
+              document.getElementById(image[0]).src = eval(image + ".src")
+            }
+            </script>
+
    </head>
-   <body>
+   <body onload="preLoad()">
        <main class="product-container">
  
          <!--Column for picture-->
          <div class="image-column">
-           <img data-image="grey" class="active" src="tshirt.jpg" name="shirt" id="shirt" alt="">
-           <img data-image="black" src="tshirtblack.jpg" name="shirt" id="shirt" alt="">
+           <img  id="a" class="active" src="tshirt.png" name="shirt" id="shirt" alt="">
+           
 <!--
            <img src="tshirt.jpg" name="grey" id="shirt">
            <img src="tshirtblack.jpg" name="black" id="shirt">
@@ -50,8 +62,8 @@
                             <label for="black"><span>Black</span></label>
                         </div>
 -->
-                        <input type="radio" name="option" value="Grey" id="Grey" checked>Grey
-                        <input type="radio" name="option" value="Black" id="Black" >Black
+                        <input type="radio" name="option" onClick="im('a1');" value="Grey" id="Grey" checked>Grey
+                        <input type="radio" name="option" onClick="im('a2');"value="Black" id="Black" >Black
                     </div>
                       
                 </div>
@@ -89,22 +101,3 @@
 </html>
 
 
-<script type='text/javascript'>
-    $(document).ready(function(){
-        $("input:radio[name=option]").click(function() {
-            var value = $(this).val();
-            var imagename;
-            if(value == 'Grey'){
-                imagename = "tshirt.jpg";
-            }
-            else{
-                if(value == 'Black'){
-                    imagename = "tshirtblack.jpg"
-                }
-            }
-            $('#shirt').attr('src', imagename);
-        });
-    });
-                                        
-        
-</script>
