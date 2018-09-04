@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="POST">
    <head>
      <title>Anytime Fitness T-Shirt</title>
      <link rel="stylesheet" href="productstyle.css">
@@ -14,6 +15,22 @@
               document.getElementById(image[0]).src = eval(image + ".src")
             }
             </script>
+       
+       <script>
+         function additem() {
+         var value = parseInt(document.getElementById('number').value, 10);
+         value = isNaN(value) ? 0 : value;
+         value++;
+         document.getElementById('number').value = value;
+     }
+           function subtractitem() {
+               var value = parseInt(document.getElementById('number').value, 10);
+               value = isNaN(value) ? 0 : value;
+               value < 1 ? value = 1 : ' ';
+               value--;
+               document.getElementById('number').value = value;
+           }
+</script>
 
    </head>
    <body onload="preLoad()">
@@ -35,6 +52,8 @@
                 </div>
                 
        <main class="product-container">
+           
+           <input id="id" name="id" type="hidden" value="shirt">
  
          <!--Column for picture-->
          <div class="image-column">
@@ -100,21 +119,24 @@
                 </div>
             </div>
              <br>
-            <form method="post" action="">
-             <div>
-              <label for="name">Quantity</label>
-              <input type="number" name="quantity" id="quantity" value="1">
-             </div>
+            <form>
+                <div class="quantity-button" id="subtract" name="qty" onclick="subtractitem()" value="Decrease Quantity">-</div>
+                <input type="number" id="number" name="qty" value="0" /> 
+                <div class="quantity-button" id="add" name="qty" onclick="additem()" value="Increase Quantity">+</div>
             </form>
+             <br>
              <br>
             <div class="tshirt-price">
                 <span>$39.99</span>
-                <a href="#" class="buy-button">Buy Now</a>
+              
+                <input class="buy-button" type="submit" value="Buy Now"/>
             </div>
+             <br>
         </div>
        </main>
 
    </body>
+</form>
 </html>
 
 
