@@ -90,3 +90,66 @@ body
 	border-radius: 30px;
 	color: #FFF;
 }
+
+ul.items li {
+    width: 300px;
+    display: inline-block;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    
+}
+
+#whiteTshirt img{
+    width: 115%; 
+}
+
+tshirt {
+    color:black;
+}
+
+#longsleeve img {
+    width: 95%
+}
+
+#singlet img {
+    width: 100%;
+}
+
+#windbreaker img {
+    width:120%;
+}
+
+#water img {
+    width: 100%;
+}
+
+.pagetitle {
+    font-weight: 700;
+    font-size: 40px;
+    color: #cf4af8;
+    margin-left: 10%;
+    padding-top: 10px;
+}
+
+
+a:visited {
+/*    color: blue;*/
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: black;
+}
+
+a {
+    color: black;
+}
+
