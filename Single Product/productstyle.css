@@ -91,7 +91,7 @@ body
 	color: #FFF;
 }
 .image-column img {
-    width: 120%;
+    width: 400%;
     position: absolute;
     top: 0;
     left: 5px;
@@ -239,3 +239,55 @@ body
     
 }
 
+form{
+    
+    margin: 0;
+    width: 300px;
+}
+
+.quantity-button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid grey;
+    background: #eee;
+    height: 20px;
+    width: 40px;
+    padding: 11px 0;
+}
+
+input#number {
+    text-align: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    height: 40px;
+    width: 40px;
+    border: none;
+}
+
+form #subtract {
+  margin-right: -4px;
+  border-radius: 6px 0 0 6px;
+}
+
+form #add {
+  margin-left: -4px;
+  border-radius: 0 6px 6px 0;
+}
+
+/*
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+*/
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
