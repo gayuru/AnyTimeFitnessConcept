@@ -13,14 +13,14 @@ function im(image) {
 function additem() {
     var value = parseInt(document.getElementById('number').value, 10);
     value = isNaN(value) ? 0 : value;
-    value++;
+    value = value + 1;
     document.getElementById('number').value = value;
 }
 function subtractitem() {
    var value = parseInt(document.getElementById('number').value, 10);
    value = isNaN(value) ? 0 : value;
    value < 1 ? value = 1 : ' ';
-   value--;
+   value = value - 1;
    document.getElementById('number').value = value;
 }
     
