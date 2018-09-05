@@ -261,7 +261,7 @@ margin-top: 8em;
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-	width: 43%;
+	width: 31%;
 	background-color: white;
 	float: left;
 	margin: 1.5rem;
@@ -277,7 +277,7 @@ margin-top: 8em;
 }
 
 .card-body {
-	padding: 1rem 1.5rem;
+	padding: 3rem 1.5rem;
 	line-height: auto;
 }
 
@@ -295,7 +295,15 @@ margin-top: 8em;
 	float: left;
 	width: 8%;
 	min-width: 7%;
-	margin: 3em 2em 3em 1em;
+	margin: 1em 2em 3em 1em;
+}
+
+#pageEnd
+{
+	overflow: hidden;
+	padding: 6em 0em 8em 0em;
+	position: relative;
+	text-align: center;
 }
 
 /* Copyright */
