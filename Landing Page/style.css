@@ -104,6 +104,7 @@ body
 		/* padding: 15%;  */
 		background-position: center;
 		background-size: cover;
+		height: 604px;
 		
 	}
 
@@ -117,22 +118,23 @@ body
     float: left;
 	text-align: center;
 	margin-top: 8em;
-	
+	left: 20%
 }
 
 #righttext{
     float: right;
     color: #cf4af8;
 	text-align: center;
-	
-margin-top: 8em;
+	margin-top: 8em;
+	right: 20%;
 }
 #transformation {
     display: block;
     margin-left: auto;
-	/* margin-right: auto; */
-	margin-right: 8.3%;
+	margin-right: auto;
 	width: 20%;
+	position: absolute;
+	left: 40%;
 	
 }
 
