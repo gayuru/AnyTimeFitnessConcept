@@ -147,7 +147,7 @@ margin-top: 8em;
 {
 	overflow: hidden;
 	padding: 6em 0em 17em 0em;
-	
+	position: relative;
 	text-align: center;
 }
 
@@ -235,10 +235,10 @@ margin-top: 8em;
 }
 
 #gymImg img{
-	height: 50%;
+	height: 66%;
 	float: right;
 	position: absolute;
-	top: 88%;
+	bottom: 17%;
 }
 /* Last Content */
 
@@ -253,9 +253,9 @@ margin-top: 8em;
 /* cards */
 .row{
 	
-	display: table;
-	margin-right: auto;
-	margin-left: auto;
+	display: flex;
+	justify-content: center;
+	width: 100%;
 
 }
 .card {
