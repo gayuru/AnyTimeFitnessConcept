@@ -23,6 +23,7 @@ body
 	margin: 0px auto;
 	width: 1200px;
 }
+
 /* Header */
 	
 #header
@@ -90,6 +91,9 @@ body
 	border-radius: 30px;
 	color: #FFF;
 }
+
+/* Image Column and Image */
+
 .image-column img {
     width: 400%;
     position: absolute;
@@ -108,11 +112,15 @@ body
     width: 60%;
 }
 
+/* Information Column */
+
 .info-column {
     position: absolute;
     width: 40%;
     left: 775px;
 }
+
+/* T-Shirt Information */
 
 .tshirt-description {
     border-bottom: 1px solid #ac39ac;
@@ -147,6 +155,8 @@ body
     line-height: 24px;
 }
 
+/* T-Shirt Color and Color Buttons*/
+
 .tshirt-color {
     margin-bottom: 10px;
     border-bottom: 1px solid #ac39ac;
@@ -172,26 +182,11 @@ body
   border-radius: 50%;
 }
 
-.choose-color input {
-/*
-  border: 2px solid #FFFFFF;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
-*/
-}
-
 .choose-color input #grey {
   background-color: gray;
 }
 
-.color-choose input #black {
-  background-color: black;
-}
-
-.color-choose input checked + label span {
-  background-image: url(images/check-icn.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
+/* T-Shirt Price */
 
 .tshirt-price {
   display: flex;
@@ -204,6 +199,8 @@ body
   color: #ac39ac;
   margin-right: 20px;
 }
+
+/* Buy Now Button*/
 
 .buy-button {
   display: inline-block;
@@ -218,6 +215,8 @@ body
 .buy-button:hover {
   background-color: aqua;
 }
+
+/* Size Dropdown Menu */
 
 .size-options{
   position: relative;
@@ -239,8 +238,9 @@ body
     
 }
 
+/* Quantity Button to add/subtract an item */
+
 form{
-    
     margin: 0;
     width: 300px;
 }
@@ -274,13 +274,6 @@ form #add {
   margin-left: -4px;
   border-radius: 0 6px 6px 0;
 }
-
-/*
-form #input-wrap {
-  margin: 0px;
-  padding: 0px;
-}
-*/
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {

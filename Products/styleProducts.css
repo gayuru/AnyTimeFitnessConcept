@@ -91,6 +91,8 @@ body
 	color: #FFF;
 }
 
+/* Products List */
+
 ul.items li {
     width: 300px;
     display: inline-block;
@@ -101,7 +103,7 @@ ul.items li {
 }
 
 #whiteTshirt img{
-    width: 115%; 
+    width: 122%;
 }
 
 tshirt {
@@ -124,6 +126,8 @@ tshirt {
     width: 100%;
 }
 
+/* Our Products Title*/
+
 .pagetitle {
     font-weight: 700;
     font-size: 40px;
@@ -132,10 +136,7 @@ tshirt {
     padding-top: 10px;
 }
 
-
-a:visited {
-/*    color: blue;*/
-}
+/* Link to T-Shirt */
 
 a:link {
     text-decoration: none;

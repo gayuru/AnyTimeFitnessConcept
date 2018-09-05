@@ -4,7 +4,9 @@
    <head>
      <title>Anytime Fitness T-Shirt</title>
      <link rel="stylesheet" href="productstyle.css">
+     <script type="text/javascript" src="productjavascript.js"></script>
 
+<!--
      <script>
             function preLoad() {
               a1 = new Image; a1.src = 'tshirt.png';  
@@ -31,6 +33,7 @@
                document.getElementById('number').value = value;
            }
 </script>
+-->
 
    </head>
    <body onload="preLoad()">
@@ -53,16 +56,13 @@
                 
        <main class="product-container">
            
-           <input id="id" name="id" type="hidden" value="shirt">
+           <input id="id" name="id" type="hidden" value="ts001">
  
          <!--Column for picture-->
          <div class="image-column">
            <img  id="a" class="active" src="tshirt.png" name="shirt" id="shirt" alt="">
-           
-<!--
-           <img src="tshirt.jpg" name="grey" id="shirt">
-           <img src="tshirtblack.jpg" name="black" id="shirt">
--->
+            <!--  Picture obtained from https://rateeshirt.com/product/anytime-fitness-logo-t-shirt-rt/  -->
+            <!--  Picture obtained from https://rateeshirt.com/product/anytime-fitness-logo-t-shirt-rt/  -->
          </div>
 
          <!--Column for product info-->
@@ -88,16 +88,6 @@
                     <span>Color</span>
                     
                     <div class="choose-color">
-<!--
-                        <div>
-                            <input data-image="grey" type="radio" id="grey" name="color" value="grey" checked>
-                            <label for="grey"><span>Grey</span></label>
-                        </div>
-                        <div>
-                            <input data-image="black" type="radio" id="black" name="color" value="black">
-                            <label for="black"><span>Black</span></label>
-                        </div>
--->
                         <input type="radio" name="option" onClick="im('a1');" value="Grey" id="Grey" checked>Grey
                         <input type="radio" name="option" onClick="im('a2');"value="Black" id="Black" >Black
                     </div>
