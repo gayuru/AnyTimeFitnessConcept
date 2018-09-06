@@ -11,6 +11,70 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
 }
+html, body
+{
+	height: 100%;
+}
+
+.container
+{
+	margin: 0px auto;
+	width: 1200px;
+}
+/* Header */
+	
+#header
+{
+	position: relative;
+	height: 100px;
+}
+
+/* Menu */
+
+#menu
+{
+	position: absolute;
+	right: -9em;
+	top: 1.6em;
+}
+
+#menu ul
+{
+	display: inline-block;
+}
+
+#menu li
+{
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+#menu li a, #menu li span
+{
+	display: inline-block;
+	margin-left: 1px;
+	padding: 1em 1.5em 1em 1.5em;
+    letter-spacing: 0.10em;
+    font-family: Quicksand;
+	text-decoration: none;
+	font-size: 1em;
+	text-transform: uppercase;
+	outline: 0;
+	color: white;
+}
+
+#menu li:hover a, #menu li.active a, #menu li.active span
+{
+    color: #cf4af8;
+}
+
+#menu .current_page_item a
+{
+	background:grey;
+	border-radius: 30px;
+	color: #FFF;
+}
 
 .username{
     position: relative;
