@@ -4,4 +4,8 @@ Developed by Gayuru Gunawardena and Punita Indrarathna </br> Web Programming | R
 
 <b>Screenshots </b> 
 
-![Screenshot](/screeshots/1.jpg?raw=true "LandingPage")
+![Screenshot](/screenshots/1.jpg?raw=true "LandingPage")
+
+![Screenshot](/screenshots/2.jpg?raw=true "LandingPage")
+
+![Screenshot](/screenshots/3.jpg?raw=true "LandingPage")
