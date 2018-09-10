@@ -41,7 +41,6 @@ body
 
 #logo img
 {
-    /* height: 15%; */
     width: 15%;
     position:fixed; 
     top:1.6em; 
@@ -85,8 +84,7 @@ body
 
 #menu li:hover a, #menu li.active a, #menu li.active span
 {
-    /* background: #dc5c5a;
-    border-radius: 25px; */
+    
     color: #cf4af8;
 }
 
@@ -101,7 +99,7 @@ body
 
 #header-featured
 {
-		/* padding: 15%;  */
+		
 		background-position: center;
 		background-size: cover;
 		height: 604px;
@@ -196,7 +194,7 @@ body
 	overflow: hidden;
 	padding: 6em 0em 14em 0em;
 	text-align: center;
-	background-image: url("gymGirls.jpg") ;
+	background-image: url("../media/gymGirls.jpg") ;
     background-size: 100% ;
     background-position:inherit;
 }
@@ -325,8 +323,9 @@ margin:0.2em auto;}
 #copyright
 {
 	overflow: hidden;
-	padding: 2em 0em 4em 0em;
+	padding: 2em 0em 2em 0em;
 	border-top: 3px solid rgba(255,255,255,0.08);
+	line-height: 150%;
 }
 
 #copyright p
@@ -343,6 +342,17 @@ margin:0.2em auto;}
 	text-decoration: none;
 	color: rgba(255,255,255,0.6);
 }
+#toggleWireframeCSS {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	padding: 6px 10px;
+	opacity: 0.5;
+	font-family: 'Nunito';
+}
 
+#toggleWireframeCSS:hover {
+	opacity: 1;
+}
 
 

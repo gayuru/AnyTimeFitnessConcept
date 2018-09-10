@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html>
-<form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="POST">
+
    <head>
      <title>Anytime Fitness T-Shirt</title>
-     <link rel="stylesheet" href="productstyle.css">
+     <link id="stylecss" rel="stylesheet" href="productstyle.css">
+     <link rel="icon" href="../../media/favicon.ico" type="image/x-icon">
      <script type="text/javascript" src="productjavascript.js"></script>
+     <script src='../../wireframe.js'></script>
 
    </head>
    <body onload="preLoad()">
-
         <div id="header-wrapper">
                 <div id="header" class="container">
                     <div id="logo">
-                        <img src="Logo.png">
+                    <!-- Original image below sourced for educational purposes from AnyTimeFitness Logo -->
+                    <a href="../../index.php">
+                    <img src="./media/Logo.png">
+                    </a>
                     </div>
                     <div id="menu">
                         <ul>
-                                <li><a href="index.html" accesskey="1" title="">Homepage</a></li>
-                                <li class="current_page_item"><a href="./web-pages/Products/ProductsPage.html" accesskey="2" title="">Our Products</a></li>
-                                <li><a href="./web-pages/Login Page/index.html" accesskey="3" title="">Login</a></li>
+                                <li><a href="../../index.php" accesskey="1" title="">Homepage</a></li>
+                                <li class="current_page_item"><a href="../Products/products.php" accesskey="2" title="">Our Products</a></li>
+                                <li><a href="../Login Page/login.php" accesskey="3" title="">Login</a></li>
                         </ul>
                     </div>
                 </div>
-                
        <main class="product-container">
            
-           <input id="id" name="id" type="hidden" value="ts001">
- 
+       <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="POST" onSubmit='return formValidate()' >
          <!--Column for picture-->
          <div class="image-column">
-           <img  id="a" class="active" src="tshirt.png" name="shirt" id="shirt" alt="">
+           <img  id="a" class="active" src="./media/tshirt.png" name="shirt" id="shirt" alt="">
             <!--  Picture obtained from https://rateeshirt.com/product/anytime-fitness-logo-t-shirt-rt/  -->
-            <!--  Picture obtained from https://rateeshirt.com/product/anytime-fitness-logo-t-shirt-rt/  -->
+        
          </div>
 
          <!--Column for product info-->
@@ -41,7 +43,8 @@
             <div class="tshirt-description">
                 <span>Clothing</span>
                 <h1>Anytime Fitness T-Shirt</h1>
-                <p>Show off your workout dedication with the new official Anytime Fitness T-Shirt! Designed for maximum comfort and breathability, this T-Shirt is sure to be your go-to gymwear! Available now in Grey and Black.</p>
+                <p>Show off your workout dedication with the new official Anytime Fitness T-Shirt! 
+                Designed for maximum comfort and breathability, this T-Shirt is sure to be your go-to gymwear! Available now in Grey and Black.</p>
                 <ul>
                   <li>Regular Fit</li>
                   <li>100% Cotton</li>
@@ -60,7 +63,8 @@
                         <input type="radio" name="option" onClick="im('a1');" value="Grey" id="Grey" checked>Grey
                         <input type="radio" name="option" onClick="im('a2');"value="Black" id="Black" >Black
                     </div>
-                      <br>
+                    <br>
+                    <input id="id" name="id" type="hidden" value="ts001">
                 </div>
 
                 <!--tshirt size-->
@@ -77,25 +81,28 @@
                     </div>
                 </div>
             </div>
-             <br>
-            <form>
+            <br>
+           
                 <div class="quantity-button" id="subtract" name="qty" onclick="subtractitem()" value="Decrease Quantity">-</div>
                 <input type="number" id="number" name="qty" value="0" /> 
+                <span class='error' id='qtyError'> </span>
                 <div class="quantity-button" id="add" name="qty" onclick="additem()" value="Increase Quantity">+</div>
-            </form>
              <br>
              <br>
             <div class="tshirt-price">
                 <span>$39.99</span>
-              
-                <input class="buy-button" type="submit" value="Buy Now"/>
+                <input class="buy-button" type="submit" value="Submit"/>
             </div>
-             <br>
+            <br>
         </div>
+        </form>
        </main>
 
-   </body>
-</form>
+
+<button id="toggleWireframeCSS" onclick="toggleWireframe()">Toggle Style CSS</button>
+      
+</body>
+
 </html>
 
 
